@@ -1,0 +1,25 @@
+{
+  "name": "kisisel-bulut-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "hash-password": "node scripts/hash-password.mjs",
+    "check": "node --check next.config.mjs && node --check scripts/hash-password.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.110.0",
+    "bcryptjs": "3.0.3",
+    "next": "16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "overrides": {
+    "postcss": "8.5.16"
+  }
+}
